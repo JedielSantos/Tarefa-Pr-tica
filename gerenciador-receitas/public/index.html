@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Receitas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gerenciador de Receitas</h1>
+
+  <!-- Formulário para adicionar receita -->
+  <section class="form-container">
+    <h2>Adicionar Nova Receita</h2>
+    <form id="recipeForm">
+      <label for="nome">Nome da Receita:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="ingredientes">Ingredientes (separados por vírgula):</label>
+      <input type="text" id="ingredientes" name="ingredientes" required>
+
+      <label for="tipo">Tipo de Prato:</label>
+      <input type="text" id="tipo" name="tipo" required>
+
+      <button type="submit">Adicionar Receita</button>
+    </form>
+  </section>
+
+  <!-- Lista de receitas -->
+  <section id="recipeList">
+    <h2>Receitas</h2>
+    <ul id="recipes"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
